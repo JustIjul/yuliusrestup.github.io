@@ -124,11 +124,14 @@
      <div class="row text-center mb-4">
        <div class="col">
          <h2>Contact Me</h2>
-         <p class="perbaikan"><em>Fitur ini masih sedang dalam perbaikan!</em></p>
        </div>
      </div>
      <div class="row justify-content-center">
        <div class="col-8">
+         <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
+  <strong>Arigatou!</strong> Pesan anda sudah terkirim.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
   <form name="yuliusrestu-contact-form">
   <div class="mb-3">
     <label for="name" class="form-label">Nama</label>
@@ -142,7 +145,18 @@
   <label for="pesan" class="form-label">Pesan</label>
   <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
 </div>
-  <button type="submit" class="btn-primary">Kirim</button>
+
+<!-- Ini button kirim -->
+
+  <button type="submit" class="btn-primary btn-kirim">Kirim</button>
+  
+  <!-- Ini button loading -->
+  
+  <button class="btn btn-primary d-none btn-loading" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+
 </form>
        </div>
      </div>
