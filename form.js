@@ -14,6 +14,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwWC0G3_qna886NuoBDXV
         btnKirim.classList.toggle('d-none')
         btnLoading.classList.toggle('d-none')
         myAlert.classList.toggle('d-none')
+        form.reset()
       })
       .catch(error => console.error('Error!', error.message))
   })
